@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="contactUs.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="stylesheet" href="contact.html">
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <!-- google fonts -->
+
+
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="left">
+      <img id="lo" src="lo.jpg" alt="Logo" height="60px" />
+      <h4 id="f">Decor</h4>
+    </div>
+    <div class="middle">
+      <ul class="middleli">
+        <li><a  href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <!-- <li><a id="cat" href="#">Categories</a></li> -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Categories
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="durian.html">durian</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="pine.html">pine</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="oak.html">oak</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="maple.html">maple</a></li>
+          </ul>
+        </li>
+        <li><a id="active" href="contact.html">Contact</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a  href="login.html">Login</a></li>
+      </ul>
+     
+    </div>
+    <div class="right">
+      <button class="card-btnnav1" id="display-none">Call Us</button>
+      <button class="card-btnnav"  id="display-none">Email Us</button>
+
+    </div>
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+  <div class="contact">
+    <div class="formleft">
+      <form>
+        <div class="mt-5 col-sm-8 lg-6">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3 col-sm-8 lg-6">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+
+        <div class="mb-3 col-sm-8 lg-6 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <div class="col-sm-8 lg-6">
+        <label for="inputPassword5" class="form-label">Your Message</label>
+        <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
+        <div id="passwordHelpBlock" class="form-text">
+         
+        </div>
+      </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+    <div class="picright">
+      <img id="conimg" src="Free Vector _ Call center concept illustration.jfif" alt="">
+    </div>
+  </div>
+
+
+  
+  <script>
+  
+
+    const hamburger = document.querySelector('.hamburger');
+    const navbar = document.querySelector('.navbar');
+
+    hamburger.addEventListener('click', () => {
+      navbar.classList.toggle('active');
+    });
+
+
+  </script>
+  <br><br><br><br>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4>ABOUT US</h4>
+        <p> <i class="fa-solid fa-message"></i> "Hi, my name is Kashan, and I am a furniture maker. If you need any kind
+          of furniture design" kindly contact with my team . Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis quo, rerum recusandae unde amet ratione nostrum iste molestias illum, sapiente minima sed excepturi, animi ut?</p>
+      </div>
+      <div class="footer-section">
+        <h5>Links</h5>
+        <ul>
+          <li><a href="#"> <i class="fa-solid fa-house"></i> Home</a></li>
+          <li><a href="#"> <i class="fa-solid fa-toolbox"></i> Services</a></li>
+          <li><a href="contact.html"> <i class="fa-solid fa-phone"></i> Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Contact</h4>
+        <p> <i class="fa-solid fa-envelope"></i> Email: sharplaiba311@gmail.com</p>
+        <p><i class="fa-solid fa-phone"></i> Phone: 030027860666</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Your Company. All rights reserved.</p>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>
